@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeLite_Workspace Name="gp2-i2c" Database="">
+  <Environment>
+    <![CDATA[]]>
+  </Environment>
+  <Project Name="test_led" Path="test/led/test_led.project" Active="No"/>
+  <Project Name="gp2read" Path="gp2read/gp2read.project" Active="No"/>
+  <Project Name="test_usislave" Path="test/usi/test_usislave.project" Active="No"/>
+  <Project Name="gp2-i2c" Path="gp2-i2c.project" Active="Yes"/>
+  <BuildMatrix>
+    <WorkspaceConfiguration Name="Debug" Selected="no">
+      <Environment/>
+      <Project Name="test_led" ConfigName="Debug"/>
+      <Project Name="test_i2c" ConfigName="Debug"/>
+      <Project Name="gp2read" ConfigName="Debug"/>
+      <Project Name="test_usislave" ConfigName="Debug"/>
+      <Project Name="gp2-i2c" ConfigName="Debug"/>
+    </WorkspaceConfiguration>
+    <WorkspaceConfiguration Name="Release" Selected="yes">
+      <Environment/>
+      <Project Name="test_led" ConfigName="Release"/>
+      <Project Name="test_i2c" ConfigName="Release"/>
+      <Project Name="gp2read" ConfigName="Release"/>
+      <Project Name="test_usislave" ConfigName="Release"/>
+      <Project Name="gp2-i2c" ConfigName="Release"/>
+    </WorkspaceConfiguration>
+  </BuildMatrix>
+</CodeLite_Workspace>

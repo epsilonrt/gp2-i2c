@@ -1,0 +1,43 @@
+LABCENTER PROTEUS TOOL INFORMATION FILE
+=======================================
+
+In case of difficulty, please e-mail support@labcenter.co.uk
+
+Tool set up for Proteus layout 'gp2-i2c.LYT'.
+CADCAM generated at 17:10:28 on lundi 15 mai 2017.
+
+File List
+---------
+Top Copper              : gp2-i2c - CADCAM Top Copper.TXT
+Bottom Copper           : gp2-i2c - CADCAM Bottom Copper.TXT
+Mechanical 1            : gp2-i2c - CADCAM Mechanical 1.TXT
+Drill                   : gp2-i2c - CADCAM Drill.TXT
+
+Photoplotter Setup
+------------------
+Format: RS274X, ASCII, 2.4, imperial, absolute, eob=*, LZO
+Notes:  D=Diameter, S=Side, W=Width, H=Height, C=Chamfer
+
+D10	CIRCLE  D=20th                                                            DRAW
+D11	CIRCLE  D=10th                                                            DRAW
+D12	CIRCLE  D=50th                                                            FLASH
+D13	SQUARE  S=70th                                                            FLASH
+D14	CIRCLE  D=70th                                                            FLASH
+D15	RECT    W=50th                H=40th                                      FLASH
+D16	RECT    W=50th                H=100th                                     FLASH
+D17	RECT    W=35th                H=40th                                      FLASH
+D18	RECT    W=40th                H=50th                                      FLASH
+D19	RECT    W=75th                H=25th                                      FLASH
+D70	RECT    W=40th                H=35th                                      FLASH
+D71	CIRCLE  D=8th                                                             DRAW
+
+NC Drill Setup
+--------------
+Format: ASCII, 2.4, imperial, absolute, eob=<CR><LF>, no zero suppression.
+Notes:  Tool sizes are diameters. Layer sets are in brackets - 0=TOP, 15=BOTTOM, 1-14=INNER.
+
+T01	20th (0-15)
+T02	40th (0-15)
+
+
+[END OF FILE]
