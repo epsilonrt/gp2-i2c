@@ -1,4 +1,4 @@
-#gp2-i2c
+# gp2-i2c
 
 *Module I²C pour capteur de particules fines GP2Y1010AU0F*
 
@@ -11,7 +11,7 @@ Copyright © 2017 epsilonRT, All rights reserved.
 
 Un ATtiny85 est utilisé pour générer le signal de commande de la led du capteur, 
 et mesurer le signal en sortie du capteur (280µs après l'allumage de la led).
-La valeur forunie sur le bus I²C correspond au moyennage sur 64 mesures 
+La valeur fournie sur le bus I²C correspond au moyennage sur 64 mesures 
 (paramétrable dans config.h). Un cycle de mesure est effectué toutes les 8 
 secondes.
 
@@ -19,7 +19,7 @@ Le schéma du module est le suivant:
 
 ![schéma](https://github.com/epsilonrt/gp2-i2c/raw/master/hardware/gp2-i2c-sch.jpg)
 
-##Lecture par l'interface I²C
+## Lecture par l'interface I²C
 Le __gp2-i2c__ se comporte comme un esclave I²C, son adresse<sup>1</sup> est :
 <table>
 <tr><th>1</th><th>0</th><th>0</th><th>0</th><th>1</th><th>1</th><th>0</th><th>RW</th></tr>
@@ -41,7 +41,7 @@ l'esclave avec le bit R/W à 0, puis l'adresse de l'octet à lire (0 pour LSB, 1
 pour MSB), puis restart suivi de l'adresse de l'esclave avec le bit R/W à 1, 
 puis lit les octets qui sont acquités par l'esclave.
 
-##Programmation de l'attiny
+## Programmation de l'attiny
 
 L'utilisation d'un attiny comme gp2-i2c nécessite une modification des 
 fusibles et une programmation de la mémoire FLASH avec le firmware gp2-i2c. 
@@ -49,7 +49,7 @@ fusibles et une programmation de la mémoire FLASH avec le firmware gp2-i2c.
 La compilation du firmware nécessite l'installation de 
 [AvrIO](http://www.epsilonrt.fr/avrio/doc01.html).
 
-###Configuration des fusibles du attiny
+### Configuration des fusibles du attiny
 
 Le microcontrôleur [attiny](http://www.atmel.com/devices/attiny.aspx) 
 est paramétré de la façon suivante :
@@ -73,7 +73,7 @@ Soit une valeur de 0xDD.
 Si AvrIO est installé correctement, la programmation des fusibles peut se faire 
 à l'aide de la commande `make fuse` lancé depuis le shell ou Codelite.
 
-###Compilation et Programmation du firmware
+### Compilation et Programmation du firmware
 
 Il est possible de modifier la configuration du firmware grâce au fichier 
 [config.h](https://github.com/epsilonrt/gp2-i2c/blob/master/config.h).
