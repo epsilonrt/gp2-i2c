@@ -23,7 +23,7 @@ extern "C" {
 // Adresse de notre circuit sur le bus I2C (alignée à droite pour linux)
 #define OWN_ADDRESS (0x46)
 // Nombre d'échantillons pour le moyennage
-#define AVERAGE_TERMS 128
+#define AVERAGE_TERMS 64
 
 /* build options ============================================================ */
 // Validation watch-dog pour cadencer les mesures toutes les 8 s

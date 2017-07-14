@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<CodeLite_Project Name="gp2-i2c" InternalType="">
+<CodeLite_Project Name="gp2-i2c" InternalType="" Version="10.0.0">
   <Plugins>
     <Plugin Name="qmake">
       <![CDATA[00020001N0005Debug0000000000000001N0007Release000000000000]]>
@@ -130,6 +130,10 @@
     <File Name="gp2-i2c.c"/>
     <File Name="board.mk"/>
     <File Name="config.h"/>
+    <File Name="README.md"/>
+    <File Name="AUTHORS"/>
+    <File Name="LICENCE"/>
+    <File Name="LICENSE"/>
   </VirtualDirectory>
   <VirtualDirectory Name="board">
     <File Name="board/avrio-board-led.h"/>
